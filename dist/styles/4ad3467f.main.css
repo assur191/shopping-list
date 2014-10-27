@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+body {
+    background: rgba(131, 205, 255, .41);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333
+}
+
+.header {
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-align: center
+}
+
+.header h1 {
+    text-shadow: rgba(0, 0, 0, .26) 0 1px 0;
+    font-family: 'Droid Sans', sans-serif;
+    margin: 0;
+    padding: 25px
+}
+
+.header, .main {
+    background-color: #eee
+}
+
+.main {
+    margin: 0 auto;
+    width: 400px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    border-radius: 6px;
+    padding: 60px
+}
+
+.main input {
+    width: 370px
+}
+
+.main ul {
+    padding: 0
+}
+
+.main ul li {
+    display: inline-block;
+    list-style: none
+}
+
+.main ul li input {
+    width: 16px;
+    display: inline-block
+}
+
+.main ul li .button {
+    font-size: 20px;
+    color: #fff;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: linear-gradient(top, #3e779d, #65a9d7);
+    box-shadow: #000 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    width: 350px;
+    height: 40px;
+    padding: auto 0;
+    border-top: 1px solid #96d1f8;
+    text-align: center;
+    vertical-align: middle
+}
+
+.main ul li .button:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc
+}
+
+.main ul li .button:active {
+    border-top-color: #1b435e;
+    background: #1b435e
+}
