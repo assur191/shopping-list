@@ -3,7 +3,8 @@ $('document').ready(function() {
     var button = function(value){
         return  '<li class="item">' +
                 '<div class="button btn-todo">' + value + '</div>' +
-                '<img src="images/delete_16.png" class="remove">' +
+                //'<img src="../images/delete_16.png" class="remove">' +
+                '<div class="remove"></div>' +
                 '</li>';
     };
 

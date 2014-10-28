@@ -101,6 +101,13 @@ body {
           background: #105e55;
         }
       }
+
+      .remove {
+        width: 16px;
+        background: url(../images/delete_16.png) no-repeat;
+        display: inline-block;
+        height: 16px;
+      }
     }
   }
 }

@@ -234,10 +234,17 @@ module.exports = function (grunt) {
           '<%= config.dist %>',
           '<%= config.dist %>/images',
           '<%= config.dist %>/styles'
-        ]
+        ],
+        patterns: {
+          js: [
+              [/(plus\.png)/, 'Replacing reference to plus.png'],
+              [/(delete\.png)/, 'Replacing reference to delete.png']
+          ]
+        }
       },
       html: ['<%= config.dist %>/{,*/}*.html'],
-      css: ['<%= config.dist %>/styles/{,*/}*.css']
+      css: ['<%= config.dist %>/styles/{,*/}*.css'],
+      js: '*.js'
     },
 
     // The following *-min tasks produce minified files in the dist folder
@@ -288,7 +295,7 @@ module.exports = function (grunt) {
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
     // wish to use the Usemin blocks.
-    // cssmin: {
+    //cssmin: {
     //   dist: {
     //     files: {
     //       '<%= config.dist %>/styles/main.css': [
@@ -297,8 +304,8 @@ module.exports = function (grunt) {
     //       ]
     //     }
     //   }
-    // },
-    // uglify: {
+    //},
+    //uglify: {
     //   dist: {
     //     files: {
     //       '<%= config.dist %>/scripts/scripts.js': [
@@ -306,10 +313,10 @@ module.exports = function (grunt) {
     //       ]
     //     }
     //   }
-    // },
-    // concat: {
+    //},
+    //concat: {
     //   dist: {}
-    // },
+    //},
 
     // Copies remaining files to places other tasks can use
     copy: {
