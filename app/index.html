@@ -9,7 +9,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -21,32 +22,59 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div class="header">
+      <h1>My Shopping List</h1>
+    </div>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-      <li>HTML5 Boilerplate</li>
-      <li>Sass</li>
+    <div class="main">
+      <span>
+        <input type="text" placeholder="Add item to shopping list" class="item-input">
+        <img src="images/plus_16.png" class="plus">
+      </span>
 
+      <ul class="list">
+        <li class="item">
+          <div class="button btn-todo">Milk</div>
+          <img src="images/delete_16.png" class="remove">
+        </li>
+        <li class="item">
+          <div class="button btn-todo">Cheese</div>
+          <img src="images/delete_16.png" class="remove">
+        </li>
+        <li class="item">
+          <div class="button btn-todo">Wine</div>
+          <img src="images/delete_16.png" class="remove">
+        </li>
+        <li class="item">
+          <div class="button btn-todo">Cereal</div>
+          <img src="images/delete_16.png" class="remove">
+        </li>
+        <li class="iteo">
+          <div class="button btn-todo">Broccoli</div>
+          <img src="images/delete_16.png" class="remove">
+        </li>
+        <li class="item">
+          <div class="button btn-todo">Pasta</div>
+          <img src="images/delete_16.png" class="remove">
+        </li>
+        <li class="item">
+          <div class="button btn-todo">Yogurt</div>
+          <img src="images/delete_16.png" class="remove">
+        </li>
+        <li class="item">
+          <div class="button btn-todo">Potatoes</div>
+          <img src="images/delete_16.png" class="remove">
+        </li>
       </ul>
+
     </div>
 
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>

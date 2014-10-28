@@ -1,31 +1,107 @@
 // bower:scss
 // endbower
 
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+$button-text-size: 20px;
+$border-radius: 8px;
+
 body {
-  background: #fafafa;
+  background: rgba(131, 205, 255, 0.41);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
+.header {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+  h1 {
+    text-shadow: rgba(0, 0, 0, 0.26) 0 1px 0;
+    font-family: 'Droid Sans', sans-serif;
+    margin: 0;
+    padding: 25px;
+  }
+
+}
+
+.header, .main {
+  background-color: #eee;
+}
+
+.main {
+  margin: 0px auto 0 auto;
+  width: 400px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  background-color: #eee;
   border-radius: 6px;
   padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+
+  input {
+    width: 370px;
+    border-radius: $border-radius;
+  }
+  ul {
+    padding: 0;
+    li {
+      display: inline-block;
+      list-style: none;
+      input {
+        width: 16px;
+        display: inline-block;
+      }
+      .button {
+        font-size: $button-text-size;
+        margin: 5px 0;
+        border-radius: $border-radius;
+        display: inline-block;
+        width: 370px;
+        height: 40px;
+        padding: auto 0 auto 0;
+        text-align: center;
+        vertical-align: middle;
+        box-shadow: rgba(0,0,0,1) 0 1px 0;
+        text-shadow: rgba(0,0,0,.4) 0 1px 0;
+      }
+
+      .btn-todo {
+        color: white;
+        background-color: #65a9d7;
+        background: linear-gradient(top, #3e779d, #65a9d7);
+        border-top: 1px solid #96d1f8;
+
+        &:hover {
+          border-top-color: #28597a;
+          background: #28597a;
+          color: #ccc;
+        }
+
+        &:active {
+          border-top-color: #1b435e;
+          background: #1b435e;
+        }
+      }
+
+      .btn-done {
+        color: lightgrey;
+        border-top: 1px solid #acf797;
+        background: #9bd665;
+        background: linear-gradient(top, #4b9c3e, #9bd665);
+        text-decoration: line-through;
+
+        &:hover {
+          border-top-color: #377a2c;
+          background: #377a2c;
+          color: #ccc;
+        }
+
+        &:active {
+          border-top-color: #105e55;
+          background: #105e55;
+        }
+      }
+    }
   }
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
